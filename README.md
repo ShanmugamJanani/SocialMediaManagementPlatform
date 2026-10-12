@@ -1,4 +1,4 @@
-**Social Media Management Portal**
+**Social Media Management Platform**
 
 A robust, centralized web application built to manage multiple social media channels, streamline publishing, and handle audience engagement from a single dashboard.
 
