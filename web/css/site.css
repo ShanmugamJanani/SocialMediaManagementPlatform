@@ -1,0 +1,200 @@
+main > .container {
+    padding: 100px 15px 20px;
+}
+
+.footer {
+    background-color: #f5f5f5;
+    font-size: .9em;
+    height: 60px;
+}
+
+.footer > .container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    content: '';
+    left: 3px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: solid 5px transparent;
+    margin: 4px 4px 2px 4px;
+    background: transparent;
+}
+
+a.asc:after {
+    border-bottom: solid 7px #212529;
+    border-top-width: 0;
+}
+
+a.desc:after {
+    border-top: solid 7px #212529;
+    border-bottom-width: 0;
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+    padding-top: 7px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+@media(max-width:767px) {
+    .nav li > form > button.logout {
+        display:block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 0;
+    }
+}
+
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.nav > li > form > button.logout:focus {
+    outline: none;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.container{
+    width: 95%;
+    max-width: 95%;
+    
+}
+
+/* 1. Increase Header Height */
+#header .navbar {
+    min-height: 80px; /* Adjust this value as needed */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* 2. Increase Brand (Logo) Font Size */
+#header .navbar-brand {
+    font-size: 1.3rem; /* Default is usually 1.25rem */
+    font-weight: bold;
+}
+
+/* 3. Increase Menu Items Font Size */
+#header .nav-link {
+    font-size: 1.3rem; /* Adjust this to your preference */
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+/* 4. Increase Dropdown Items Font Size */
+#header .dropdown-item {
+    font-size: 1rem;
+}
+
+/* IMPORTANT: Adjust the body/main offset */
+/* Since the header is now taller, we move the content down further */
+.main-wrapper {
+    margin-top: 100px !important;
+}
+
+/* Context Menu for Message Actions (Reply, Forward, Delete) */
+.msg-context-menu {
+    display: none;
+    position: absolute;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    border-radius: 8px;
+    z-index: 1000;
+    width: 150px;
+}
+.msg-context-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 5px 0;
+}
+.msg-context-menu ul li {
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.msg-context-menu ul li:hover {
+    background-color: #f5f5f5;
+}
+.msg-context-menu ul li.delete-opt {
+    color: #dc3545;
+}
+
+/* Voice Note UI states */
+.voice-note-recording {
+    color: #e53935;
+    animation: blink 1.5s infinite;
+}
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.4; }
+    100% { opacity: 1; }
+}
+
+/* Reply Preview Area above Input Box */
+.reply-preview-box {
+    display: none;
+    background: #f0f2f5;
+    border-left: 4px solid #00a884;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    position: relative;
+}
+.reply-preview-box .close-reply {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    cursor: pointer;
+}
+.dropdown-menu {
+    z-index: 2000 !important;
+}
+
+.message-dashboard-btn {
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #000000;
+    transition: all 0.2s ease-in-out;
+}
+
+.message-dashboard-btn:hover {
+    background-color: #000000;
+    color: #ffffff;
+    border-color: #000000;
+}
